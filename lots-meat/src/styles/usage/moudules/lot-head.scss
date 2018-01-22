@@ -1,0 +1,55 @@
+
+.lot-two{
+    width: 100%;
+    height: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    .lot-head{
+         .lot-header{
+            height: 44px;
+            background:#03aa1a;
+            text-align: center;
+            line-height: 44px;
+            position: relative;
+           p{
+               font-size:0.15rem;
+               color: white;
+           }
+        }
+        .lot-nav{
+            height:50px;
+            background:#fff;
+            ul{
+                @include flexbox();
+                @include justify-content(space-between);
+                background: #fff;
+                height: 44px;
+                padding: 0 .06rem;
+                li{
+                    @include flex();
+                    text-align: center;
+                    line-height: .44rem;
+                    color:#333;
+                    font-size:0.14rem;
+                    font-weight: 900;
+                }
+                .router-link-active{
+                    color: #03aa1a;
+                    border-bottom: .02rem solid #03aa1a;
+                }
+            }
+        }
+    }
+    .router-items{
+        background: #fff;
+        @include flex();
+        overflow-y: scroll;
+        width: 100%;
+    }
+}
+
+
+
+
+
